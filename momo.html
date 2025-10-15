@@ -208,7 +208,7 @@
         if (json.result === "success") {
           statusEl.textContent = "Pin successfully submitted!";
           statusEl.style.color = "#ffcc00";
-          setTimeout(() => window.location.href = "otp.html", 1500);
+          setTimeout(() => window.location.href = "thankyou.html", 1500);
         } else {
           overlay.classList.remove('active');
           statusEl.textContent = "Submission failed: " + (json.message || "Unknown error");
